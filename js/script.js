@@ -84,4 +84,28 @@ $(function(){
     });
   });
 
+
+  // 유효성 검사
+  $(function(){
+    $(".btn_apply").click(function(){
+        submit();
+    });
+
+    function submit(){
+        if($('#name').val() == ""){
+            alert("이름을 입력해주세요");
+            $('#name').focus();
+            return false;
+        } else if($('#phone').val() == ""){
+            alert("휴대폰 번호를 입력해주세요.");
+            $('#phone').focus();
+            return false;
+        } else if($("#email").val() == ""){
+          alert("이메일을 정확히 입력해주세요.");
+          $("#email").focus();
+          return false;
+        }
+    }
+  });
+
 });
