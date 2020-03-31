@@ -89,7 +89,7 @@ section {
 
 
 /* 공지사항 */
-#notice { background-image: url(../img/bg_notice.png);}
+#notice { background-image: url(img/bg_notice.png);}
 .notice_wrap { width: 33%; height: auto;}
 .notice_wrap ul { border: 2px solid #fff; background: rgba(0,0,0,0.5);}
 .notice_wrap ul li { border-bottom: 1px solid rgba(255,255,255,0.6);}
@@ -107,21 +107,21 @@ section {
 .btn_notice { margin-top: 40px; font-size: 18px; padding: 18px 0 20px 0;}
 
 /* 국립발레단 소개 */
-#intro { background-image: url(../img/bg_intro.png); justify-content: baseline;}
+#intro { background-image: url(img/bg_intro.png); justify-content: baseline;}
 .intro_wrap { width: 33%; height: auto; transform: translate(-300px, 0);}
 .intro_wrap .text { font-size: 18px; font-weight: 100; line-height: 160%; color: #fff;}
 .intro_wrap .btn_wrap { margin-top: 30px; display: flex; justify-content: space-between;}
 .intro_wrap .btn_wrap a { display: inline-block; width: 48%; font-size: 16px; padding: 12px 0;}
 
 /* 아카데미 소개 */
-#academy { background-image: url(../img/bg_academy.png);}
+#academy { background-image: url(img/bg_academy.png);}
 .academy_wrap { width: 40%; height: auto;}
 .academy_wrap ul { display: flex; justify-content: space-between;}
 .academy_wrap ul li { overflow: hidden; position: relative; width: 46%; height: 330px; cursor: pointer;}
 .academy_wrap ul li a { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; transition: 1s;}
 .academy_wrap ul li:hover a { transform: scale(1.1); transition: 1s;}
-.btn_kids { background-image: url(../img/academy_01.jpg); background-position: -100px center;}
-.btn_adult { background-image: url(../img/academy_02.jpg); background-position: -160px 0;}
+.btn_kids { background-image: url(img/academy_01.jpg); background-position: -100px center;}
+.btn_adult { background-image: url(img/academy_02.jpg); background-position: -160px 0;}
 
 .academy_wrap ul li p { 
   position: absolute; 
@@ -140,14 +140,14 @@ section {
   right: 40px; 
   width: 30px; 
   height: 30px; 
-  background: url(../img/arrow_right.png); 
+  background-image: url(img/arrow_right.png); 
   background-size: cover; 
   transition: all 0.6s;
 }
 .academy_wrap ul li:hover span { right: 30px; transition: all 0.6s;}
 
 /* 소식 갤러리 */
-#gallery { background-image: url(../img/bg_gallery.png);}
+#gallery { background-image: url(img/bg_gallery.png);}
 .gallery_wrap { width: 65%; height: auto;}
 
 .accordion { width: 100%; height: 300px; border: 2px solid #fff; display: flex; background-color: #000;}
@@ -177,16 +177,16 @@ section {
 .accordion li:hover { width: 40%; transition: all 0.5s;}
 .accordion li a:hover > i { opacity: 1; transition: all 0.5s;}
 
-.accordion li:nth-child(1) { background-image: url(../img/gallery_01.PNG);}
-.accordion li:nth-child(2) { background-image: url(../img/gallery_02.PNG);}
-.accordion li:nth-child(3) { background-image: url(../img/gallery_03.PNG);}
-.accordion li:nth-child(4) { background-image: url(../img/gallery_04.PNG);}
-.accordion li:nth-child(5) { background-image: url(../img/gallery_05.PNG);}
-.accordion li:nth-child(1) i { background-image: url(../img/icon_instagram.png);}
-.accordion li:nth-child(2) i { background-image: url(../img/icon_facebook.png);}
-.accordion li:nth-child(3) i { background-image: url(../img/icon_instagram.png)}
-.accordion li:nth-child(4) i { background-image: url(../img/icon_instagram.png);}
-.accordion li:nth-child(5) i { background-image: url(../img/icon_youtube.png);}
+.accordion li:nth-child(1) { background-image: url(img/gallery_01.PNG);}
+.accordion li:nth-child(2) { background-image: url(img/gallery_02.PNG);}
+.accordion li:nth-child(3) { background-image: url(img/gallery_03.PNG);}
+.accordion li:nth-child(4) { background-image: url(img/gallery_04.PNG);}
+.accordion li:nth-child(5) { background-image: url(img/gallery_05.PNG);}
+.accordion li:nth-child(1) i { background-image: url(img/icon_instagram.png);}
+.accordion li:nth-child(2) i { background-image: url(img/icon_facebook.png);}
+.accordion li:nth-child(3) i { background-image: url(img/icon_instagram.png)}
+.accordion li:nth-child(4) i { background-image: url(img/icon_instagram.png);}
+.accordion li:nth-child(5) i { background-image: url(img/icon_youtube.png);}
 
 .gallery_wrap .btn_wrap { margin-top: 40px; display: flex; justify-content: space-between;}
 .gallery_wrap .btn_wrap a { display: block; width: 32%; font-size: 16px; padding: 12px 0;}
