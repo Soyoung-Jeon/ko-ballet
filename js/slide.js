@@ -1,4 +1,5 @@
 const firstSlide = document.querySelector(".item:first-child");
+firstSlide.classList.add("showing");
 
 function slide(){
 	const currentSlide = document.querySelector(".showing");
