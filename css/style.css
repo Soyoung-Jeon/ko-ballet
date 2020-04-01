@@ -9,7 +9,7 @@
 
 /* 헤더 */
 header { z-index: 2; position: fixed; width: 100%; height: auto;} 
-.mheader_bar { display: none;} 
+.mheader_bar, .mheader_modal { display: none;} 
 
 .gnb { width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.6);} 
 .gnb .inner { margin: 0 auto; width: 1280px; display: flex; justify-content: space-between;}

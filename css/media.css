@@ -5,7 +5,9 @@
 /* 1280*1080 ~ 600*1024 (태블릿) */
 @media all and (max-width:1280px){
   .gnb, .lnb { display: none;}
-  .mheader_bar { display: block; width: 100%; background-color: #7D2426;} 
+  .mheader_bar, .mheader_modal { display: block;} 
+  
+  .mheader_bar { width: 100%; background-color: #7D2426;} 
   .mheader_bar > .inner { margin: 0 auto; padding: 20px 0; width: 90%; display: flex; justify-content: space-between;} 
   .mheader_bar li:first-child { padding: 18px 0;}
   .mheader_bar li:last-child { padding-top: 8px;}
