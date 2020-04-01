@@ -31,6 +31,30 @@ $(function(){
   })
 
 
+  // 모바일 헤더 토글버튼
+  $(".btn_mheader").click(function(){
+    $(".line").toggleClass("toggle");
+    $(".mheader_bg").toggleClass("toggle");
+    $(".mheader_side").toggleClass("toggle");
+  });
+
+  $(".mheader_bg").click(function(){
+    $(".line").toggleClass("toggle");
+    $(this).toggleClass("toggle");
+    $(".mheader_side").toggleClass("toggle");
+  });
+
+  $(".toggle_lang").click(function(){
+    $(this).text( $(this).text() == "ENG" ? "KOR" : "ENG");
+  });
+
+  $(".mheader_side .list ul").slideUp(0);
+  $(".mheader_side .list h3").click(function(){
+    $(this).next().slideToggle(300)
+    $(this).children().toggleClass("on");
+  });
+
+
   // 네비게이션 버튼 이벤트
   $("nav a").eq(0).addClass("onText");
   $("nav a").children().eq(0).addClass("onCircle");

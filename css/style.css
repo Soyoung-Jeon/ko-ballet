@@ -6,8 +6,11 @@
 .skip > li > a { display: block; text-align: center; background: #7D2426; color: #fff; font-size: 0; padding: 0;}
 .skip > li > a:focus { font-size: 14px; padding: 14px 0; font-weight: 600;}
 
+
 /* 헤더 */
 header { z-index: 2; position: fixed; width: 100%; height: auto;} 
+.mheader_bar { display: none;} 
+
 .gnb { width: 100%; height: 100px; background-color: rgba(0, 0, 0, 0.6);} 
 .gnb .inner { margin: 0 auto; width: 1280px; display: flex; justify-content: space-between;}
 .gnb h1 a { display: block; padding: 26px 0; width: 180px;}
@@ -29,6 +32,7 @@ header { z-index: 2; position: fixed; width: 100%; height: auto;}
 .lnb ul li { padding: 8px 0;}
 .lnb ul li a { font-weight: 100;}
 
+
 /* 네비게이션 */
 nav { z-index: 1; position: fixed; top: calc(50% - 64px); right: 100px;}
 nav ul { text-align: right;}
@@ -40,6 +44,7 @@ nav ul li a span { margin: 0 0 2px 14px; display: inline-block; width: 6px; heig
 
 nav ul li a.onText { color: #fff; font-weight: 400;}
 nav ul li a span.onCircle { background-color: #fff;}
+
 
 /* main */
 section { 
@@ -59,9 +64,10 @@ section {
 #home { background-color: #000;}
 /* 홈화면 - 슬라이드 */
 .slide_wrap { overflow: hidden; z-index: 0; position: relative; width: 100%; height: 100vh;}
-.slide_wrap .item { opacity: 0; position: absolute; top: 0; transition: all 0.5s ease-in-out;}
+.slide_wrap .item { opacity: 0; position: absolute; top: 0; width: 100%; transition: all 0.5s ease-in-out;}
 .slide_wrap .item.showing { opacity: 1;}
-.slide_wrap .item > img { width: 100%; height: 100vh; object-fit: cover;}
+.slide_wrap .item > img:first-child { display: block; width: 100%; height: 100vh; object-fit: cover;}
+.slide_wrap .item > img:last-child { display: none;}
 
 
 /* 홈화면 - 뉴스레터 */
@@ -90,7 +96,7 @@ section {
 
 /* 공지사항 */
 #notice { background-image: url(../img/bg_notice.png);}
-.notice_wrap { width: 33%; height: auto;}
+.notice_wrap { width: 600px; height: auto;}
 .notice_wrap ul { border: 2px solid #fff; background: rgba(0,0,0,0.5);}
 .notice_wrap ul li { border-bottom: 1px solid rgba(255,255,255,0.6);}
 .notice_wrap ul li:last-child { border-bottom: 0px solid rgba(255,255,255,0.6);}
@@ -106,16 +112,18 @@ section {
 }
 .btn_notice { margin-top: 40px; font-size: 18px; padding: 18px 0 20px 0;}
 
+
 /* 국립발레단 소개 */
 #intro { background-image: url(../img/bg_intro.png);}
-.intro_wrap { width: 33%; height: auto; transform: translate(-300px, 0);}
+.intro_wrap { width: 600px; height: auto; transform: translate(-300px, 0);}
 .intro_wrap .text { font-size: 18px; font-weight: 100; line-height: 180%; color: #fff;}
 .intro_wrap .btn_wrap { margin-top: 30px; display: flex; justify-content: space-between;}
 .intro_wrap .btn_wrap a { display: inline-block; width: 48%; font-size: 16px; padding: 12px 0;}
 
+
 /* 아카데미 소개 */
 #academy { background-image: url(../img/bg_academy.png);}
-.academy_wrap { width: 40%; height: auto;}
+.academy_wrap { width: 800px; height: auto;}
 .academy_wrap ul { display: flex; justify-content: space-between;}
 .academy_wrap ul li { overflow: hidden; position: relative; width: 46%; height: 330px; cursor: pointer;}
 .academy_wrap ul li a { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; transition: 1s;}
@@ -145,6 +153,7 @@ section {
   transition: all 0.6s;
 }
 .academy_wrap ul li:hover span { right: 30px; transition: all 0.6s;}
+
 
 /* 소식 갤러리 */
 #gallery { background-image: url(../img/bg_gallery.png);}
@@ -191,6 +200,7 @@ section {
 .gallery_wrap .btn_wrap { margin-top: 40px; display: flex; justify-content: space-between;}
 .gallery_wrap .btn_wrap a { display: block; width: 32%; font-size: 16px; padding: 12px 0;}
 
+
 /* 푸터 */
 #footer { width: 100%; height: auto;}
 .footer_red { padding: 40px 0; width: 100%; background-color: #7D2426;}
@@ -204,7 +214,6 @@ section {
 .footer_red ul:last-child { width: 25%;}
 .footer_red ul:last-child li { color: #dfdfdf; line-height: 160%;}
 .footer_red ul:last-child li:first-child { padding-bottom: 10px; font-size: 16px; color: #fff;}
-
 
 .footer_white { width: 100%; background-color: #fff;}
 .footer_white ul { margin: 20px auto; width: 1280px; display: flex; justify-content: space-between;}
