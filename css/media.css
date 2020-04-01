@@ -122,7 +122,9 @@
   .academy_wrap ul li p span { top: 18px; right: 30px; width: 20px; height: 20px;}
 
   .accordion { display: block; height: 400px;}
-  .accordion li { width: 100%; height: 20%;}
+  .accordion li { width: 100%; height: 20%; background-position: center -50px;}
+  .accordion li:hover { width: 100%; height: 20%;}
+  .accordion li a i { top: 25px; left: 20px; width: 30px; height: 30px;}
   .gallery_wrap .btn_wrap { display: block;}
   .gallery_wrap .btn_wrap a { margin-bottom: 10px; width: 100%; font-size: 14px;}
 

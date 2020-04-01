@@ -1,47 +1,53 @@
 $(function(){
 
   // 메뉴 이벤트
-  $(".lnb").slideUp(0);
+  $lnb = $(".lnb");
+  $lnb.slideUp(0);
 
   $(".gnb_menu").on({
     mouseenter: function(){
-      $(".lnb").stop().slideDown(300);
+      $lnb.stop().slideDown(300);
     },
     mouseleave: function(){
-      $(".lnb").stop().slideUp(300);
+      $lnb.stop().slideUp(300);
     },
     focusin: function(){
-      $(".lnb").stop().slideDown(300);
+      $lnb.stop().slideDown(300);
     }
   })
 
-  $(".lnb").on({
+  $lnb.on({
     mouseenter: function(){
       $(this).stop().slideDown(300);
     },
     mouseleave: function(){
-      $(".lnb").stop().slideUp(300);
+      $lnb.stop().slideUp(300);
     }
   });
 
   $("nav").on({
     focusin: function(){
-      $(".lnb").stop().slideUp(300);
+      $lnb.stop().slideUp(300);
     }
   })
 
 
   // 모바일 헤더 토글버튼
+
+  $bg = $(".mheader_bg");
+  $line = $(".line");
+  $side = $(".mheader_side");
+  
   $(".btn_mheader").click(function(){
-    $(".line").toggleClass("toggle");
-    $(".mheader_bg").toggleClass("toggle");
-    $(".mheader_side").toggleClass("toggle");
+    $line.toggleClass("toggle");
+    $bg.toggleClass("toggle");
+    $side.toggleClass("toggle");
   });
 
-  $(".mheader_bg").click(function(){
-    $(".line").toggleClass("toggle");
+  $bg.click(function(){
+    $line.toggleClass("toggle");
+    $side.toggleClass("toggle");
     $(this).toggleClass("toggle");
-    $(".mheader_side").toggleClass("toggle");
   });
 
   $(".toggle_lang").click(function(){

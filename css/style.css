@@ -186,11 +186,11 @@ section {
 .accordion li:hover { width: 40%; transition: all 0.5s;}
 .accordion li a:hover > i { opacity: 1; transition: all 0.5s;}
 
-.accordion li:nth-child(1) { background-image: url(../img/gallery_01.PNG);}
-.accordion li:nth-child(2) { background-image: url(../img/gallery_02.PNG);}
-.accordion li:nth-child(3) { background-image: url(../img/gallery_03.PNG);}
-.accordion li:nth-child(4) { background-image: url(../img/gallery_04.PNG);}
-.accordion li:nth-child(5) { background-image: url(../img/gallery_05.PNG);}
+.accordion li:nth-child(1) { background-image: url(../img/gallery_01.png);}
+.accordion li:nth-child(2) { background-image: url(../img/gallery_02.png);}
+.accordion li:nth-child(3) { background-image: url(../img/gallery_03.png);}
+.accordion li:nth-child(4) { background-image: url(../img/gallery_04.png);}
+.accordion li:nth-child(5) { background-image: url(../img/gallery_05.png);}
 .accordion li:nth-child(1) i { background-image: url(../img/icon_instagram.png);}
 .accordion li:nth-child(2) i { background-image: url(../img/icon_facebook.png);}
 .accordion li:nth-child(3) i { background-image: url(../img/icon_instagram.png)}
