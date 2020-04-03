@@ -2,7 +2,6 @@ $(function(){
 
   // 메뉴 이벤트
   $lnb = $(".lnb");
-  $lnb.slideUp(0);
 
   $(".gnb_menu").on({
     mouseenter: function(){

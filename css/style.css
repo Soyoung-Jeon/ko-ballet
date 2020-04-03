@@ -25,7 +25,7 @@ header { z-index: 2; position: fixed; width: 100%; height: auto;}
 .gnb_lang li:nth-child(2) { color: #fff;}
 .gnb_lang li a { display: block; padding: 0 14px; font-size: 16px; font-weight: 700;}
 
-.lnb { width: 100%; height: auto; background-color: rgba(0,0,0,0.6); border-bottom: 2px solid rgb(125, 36, 38);}
+.lnb { display: none; width: 100%; height: auto; background-color: rgba(0,0,0,0.6); border-bottom: 2px solid rgb(125, 36, 38);}
 .lnb .inner { padding: 25px 0; margin: 0 auto; width: 780px; height: 280px;}
 .lnb ul { float: left; padding: 0 25px; height: 100%; border-right: 1px solid rgba(255, 255, 255, 0.2);}
 .lnb ul:first-child { border-left: 1px solid rgba(255, 255, 255, 0.2);}
